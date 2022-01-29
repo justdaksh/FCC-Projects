@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open sans", Arial, sans-serif;
+    background-color: grey;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+#navbar li {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+#navbar li:first-child {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    
+}
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+}
+#navbar {
+    float: left;
+    width: 23.1%;
+    position: fixed;
+    height: 100%;
+    background-color: white;
+    overflow: auto;
+}
+header {
+    font-size: 28.8px;
+    padding: 10px 20px;
+}
+#navbar header {
+    z-index: 1;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    text-align: center;
+    padding: 8px 2px;
+    
+}
+/* if need to add sth below */
+.clearfix { 
+    content: "";
+    display: table;
+    clear: both;
+}
+#main-doc {
+    background-color: rgb(255, 255, 255);
+    width: 76.7%;
+    float: right;
+    padding: 20px;
+    color: #4D4E53;
+    font-size: 15.36px;
+}
+#main-doc header {
+    color: black;
+}
+#main-doc p {
+    padding: 0px 30px;
+}
+#main-doc ul {
+    margin-left: 40px;
+}
+#main-doc li {
+    margin-bottom: 20px;
+}
+#main-doc code {
+    font-size: x-small;
+}
+.main-section:last-child a{
+    text-decoration: underline;
+    color: blue;
+}
+#inner_list {
+    margin-top: 20px;
+}
+.code {
+    background-color: #f7f7f7;
+    margin: 0px 45px;
+    padding: 10px;
+}
+@media only screen and (max-width:875px) {
+    #main-doc {
+        float: none;
+        display: block;
+        width: 100%;
+        z-index: 0;
+        overflow: scroll;
+    }
+    #navbar {
+        position: static;
+        float: none;
+        display: block;
+        width: 100%;
+        height: 300px;
+        z-index: 0;
+        /* border-collapse: collapse; */
+        border-bottom: 2px solid black;
+    }
+    #navbar ul {
+        border-top: 2px solid black;
+    }
+}
